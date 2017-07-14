@@ -6,8 +6,8 @@
       <h1 class="headline_2"><?php the_title(); ?></h1>
       <div class="content-redaktor">
         <?php the_content(); ?>
-      </div>
-    </div>
+      </div><!-- content-redaktor -->
+    </div><!-- content_left -->
 
   <?php endwhile; endif; ?>
 
