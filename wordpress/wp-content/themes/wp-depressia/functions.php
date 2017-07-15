@@ -123,29 +123,6 @@ function wpeHeadNav() {
     )
   );
 }
-// WPE footer navigation
-function wpeFootNav() {
-  wp_nav_menu(
-  array(
-    'theme_location'  => 'footer-menu',
-    'menu'            => '',
-    'container'       => 'div',
-    'container_class' => 'menu-{menu slug}-container',
-    'container_id'    => '',
-    'menu_class'      => 'menu',
-    'menu_id'         => '',
-    'echo'            => true,
-    'fallback_cb'     => 'wp_page_menu',
-    'before'          => '',
-    'after'           => '',
-    'link_before'     => '',
-    'link_after'      => '',
-    'items_wrap'      => '<ul class="footernav">%3$s</ul>',
-    'depth'           => 0,
-    'walker'          => ''
-    )
-  );
-}
 // WPE sidebar navigation
 function wpeSideNav() {
   wp_nav_menu(
@@ -174,8 +151,7 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 function register_html5_menu() {
   register_nav_menus(array(
     'header-menu' => __('Меню в шапке', 'wpeasy'),
-    'sidebar-menu' => __('Меню в сайдбар', 'wpeasy'),
-    'footer-menu' => __('Меню в подвал', 'wpeasy')
+    'sidebar-menu' => __('Меню в сайдбар', 'wpeasy')
   ));
 }
 //  If Dynamic Sidebar Existsов
@@ -190,18 +166,6 @@ if (function_exists('register_sidebar')) {
     'before_title' => '<h6>',
     'after_title' => '</h6>'
   ));
-  //  Define Sidebar Widget Area 2. If your want to display more widget - uncoment this
-  /*
-  register_sidebar(array(
-    'name' => __('Блок виджетов #2', 'wpeasy'),
-    'description' => __('Description for this widget-area...', 'wpeasy'),
-    'id' => 'widgetarea2',
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h6>',
-    'after_title' => '</h6>'
-  ));
-  */
 }
 
 //  Custom Excerpts
@@ -687,5 +651,25 @@ function wpb_get_post_views($postID){
     return $count.' Views';
 }
 
+add_action( 'init', 'disable_wp_emojicons' );
+function disable_wp_emojicons() {
+  // all actions related to emojis
+  remove_action( 'admin_print_styles', 'print_emoji_styles' );
+  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+  // filter to remove TinyMCE emojis
+  add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
+}
+function disable_emojicons_tinymce( $plugins ) {
+  if ( is_array( $plugins ) ) {
+    return array_diff( $plugins, array( 'wpemoji' ) );
+  } else {
+    return array();
+  }
+}
 
 ?>
