@@ -21,3 +21,35 @@ if (typeof jQuery === 'undefined') {
   console.log('jQuery has loaded');
 }
 // Place any jQuery/helper plugins in here.
+$(document).ready(function() {
+
+  $('.block_1_push').click(function(e) {
+    e.preventDefault();
+    if ($('.block_1').css('display') == 'none') {
+      $('.block_1').show();
+      $('.block_2').hide();
+      $('.block_1_push').css('background', '#627897');
+      $('.block_2_push').css('background', '#f1f4f7');
+      $('.block_1_push').css('color', '#ffffff');
+      $('.block_2_push').css('color', '#4b6486');
+      $('.block_2_push').css('border', '1px solid #627897');
+      $('.block_1_push').css('height', '21px');
+      $('.block_2_push').css('height', '21px');
+
+    }
+  });
+  $('.block_2_push').click(function(e) {
+    e.preventDefault();
+    if ($('.block_2').css('display') == 'none') {
+      $('.block_1').hide();
+      $('.block_2').show();
+      $('.block_1_push').css('background', '#f1f4f7');
+      $('.block_2_push').css('background', '#627897');
+      $('.block_1_push').css('color', '#4b6486');
+      $('.block_2_push').css('color', '#ffffff');
+      $('.block_1_push').css('border', '1px solid #627897');
+      $('.block_1_push').css('height', '21px');
+      $('.block_2_push').css('height', '21px');
+    }
+  });
+});

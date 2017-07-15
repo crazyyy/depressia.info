@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
@@ -124,7 +124,7 @@ msgstr "Довільний запис"
 
 #: ../functions.php:440
 msgid "Add New"
-msgstr "Додати нову"
+msgstr "Додати "
 
 #: ../functions.php:441
 msgid "Add New HTML5 Blank Custom Post"
@@ -136,7 +136,7 @@ msgstr "(Змінити)"
 
 #: ../functions.php:443
 msgid "Edit HTML5 Blank Custom Post"
-msgstr "Змінити довільний запис"
+msgstr "Змінити"
 
 #: ../functions.php:444
 msgid "New HTML5 Blank Custom Post"
@@ -152,7 +152,7 @@ msgstr "Шукати довільний запис"
 
 #: ../functions.php:448
 msgid "No HTML5 Blank Custom Posts found"
-msgstr "Не найдено индивидуальных записей"
+msgstr "Не найдено"
 
 #: ../functions.php:449
 msgid "No HTML5 Blank Custom Posts found in Trash"
@@ -165,7 +165,7 @@ msgstr "Останні дописи"
 #: ../search.php:6
 #, php-format
 msgid "%s Search Results for "
-msgstr "Результати пошуку для %s"
+msgstr "Результати пошуку (%s) для :"
 
 #: ../searchform.php:5
 msgid "Search"

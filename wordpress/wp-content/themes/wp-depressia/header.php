@@ -28,7 +28,7 @@
       <?php wpeHeadNav(); ?>
       <div class="search_block">
         <form action="<?php echo home_url(); ?>" id="searchform" method="get" name="searchform">
-          <input type="text" class="search" id="s" name="s" placeholder="поиск по сайту" value="">
+          <input type="text" class="search_in" id="s" name="s" placeholder="поиск по сайту" value="">
           <a style="cursor: pointer" class="search_but" id="searchsubmit" onclick="document.forms[&#39;searchform&#39;].submit();"></a>
         </form>
       </div>

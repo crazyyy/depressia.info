@@ -8,10 +8,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
+"Language: ru_RU\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -98,7 +99,7 @@ msgstr "Меню сайдбара"
 
 #: ../functions.php:211
 msgid "Extra Menu"
-msgstr "Экстра менб"
+msgstr "Экстра меню"
 
 #: ../functions.php:257
 msgid "Widget Area 1"
@@ -122,7 +123,7 @@ msgstr "Произвольная запись"
 
 #: ../functions.php:440
 msgid "Add New"
-msgstr "Добавить новую"
+msgstr "Добавить"
 
 #: ../functions.php:441
 msgid "Add New HTML5 Blank Custom Post"
@@ -134,7 +135,7 @@ msgstr "(Изменить)"
 
 #: ../functions.php:443
 msgid "Edit HTML5 Blank Custom Post"
-msgstr "Редактировать  новую индивидуальную запись"
+msgstr "Редактировать"
 
 #: ../functions.php:444
 msgid "New HTML5 Blank Custom Post"
@@ -146,11 +147,11 @@ msgstr "Посмотреть новую индивидуальную запис�
 
 #: ../functions.php:447
 msgid "Search HTML5 Blank Custom Post"
-msgstr "Найти новую индивидуальную запись"
+msgstr "Найти"
 
 #: ../functions.php:448
 msgid "No HTML5 Blank Custom Posts found"
-msgstr "Не найдено индивидуальных записей"
+msgstr "Не найдено"
 
 #: ../functions.php:449
 msgid "No HTML5 Blank Custom Posts found in Trash"
@@ -163,7 +164,7 @@ msgstr "Последние записи"
 #: ../search.php:6
 #, php-format
 msgid "%s Search Results for "
-msgstr "Результаты поиска для %s"
+msgstr "Результаты поиска (%s) для запроса "
 
 #: ../searchform.php:5
 msgid "Search"
@@ -179,11 +180,11 @@ msgstr "Рубрика: "
 
 #: ../single.php:39
 msgid "This post was written by "
-msgstr "Эту запись добавил "
+msgstr "Добавил "
 
 #: ../tag.php:6
 msgid "Tag Archive: "
 msgstr "Архив меток: "
 
 msgid "%s results for "
-msgstr "%s результаты"
+msgstr "%s результата(-ов) "
