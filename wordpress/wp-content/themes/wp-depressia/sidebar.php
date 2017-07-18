@@ -7,6 +7,7 @@
   <div class="article_line"></div>
 
   <p class="art_head">Статьи</p>
+  <a href="/articles/" class="other_art">другие статьи</a>
   <div class="clear"></div>
   <a href="#" class="block_1_push popular">Популярные</a>
   <a href="#" class="block_2_push new">Новые</a>

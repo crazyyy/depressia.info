@@ -2,7 +2,9 @@
 
   <div class="content_left">
 
-    <p class="headline_2"><?php _e( 'Latest Posts', 'wpeasy' ); ?></p>
+	<p class="nav"><a href="/">Главная</a><img src="<?php echo get_template_directory_uri(); ?>/img/nav_tri.png" alt="">Статьи</p>
+
+    <p class="headline_2">Статьи</p>
 
     <?php get_template_part('loop'); ?>
 
